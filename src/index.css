@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Road+Rage&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  transition:all .3s ease-in-out;
+}
+.dark-bg {
+  background-color:rgb(16, 17, 19);
+}
+.light-bg{
+  background-color:white;
+}
+.title{
+  font-size:35px;
+  padding:20px;
+  font-family: 'IBM Plex Serif', serif;
+  transition:all .3s ease-in-out;
+}
+.light-title{
+  color:white;
+}
+.dark-title{
+  color:#000;
+}
+.btn{
+  padding:5px; 
+  font-weight: 600;
+  font-size:16px;
+  cursor:pointer;
+  border:none;
+  border-radius:7px;
+  transition: all .3s ease-in-out;
+}
+.light-btn{
+  color:white;
+  background-color:rgb(37, 35, 35);
+}
+.dark-btn{
+  color:black;
+  background-color:whitesmoke;
+}
+.btn:hover{
+  transform:scaleX(1.07);
+  font-size:17px;
+}
+article{
+  width:60%;
+  margin:30px auto;
+}
+.title-article{
+  
+  font-size:30px;
+  margin-bottom:5px;
+  transition: all .3s ease-in-out;
+}
+.title-light{
+  color:rgb(22, 56, 121);
+}
+.title-dark{
+  color:rgb(73, 192, 207);
+}
+.text{
+  font-size:20px;
+  margin-top:5px;
+  letter-spacing:.20rem;
+}
+.text-dark{
+  color:black;
+}
+.text-light{
+  color:white;
 }
