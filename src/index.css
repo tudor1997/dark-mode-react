@@ -81,3 +81,9 @@ article{
 .text-light{
   color:white;
 }
+
+@media screen and (max-width:668px){
+  .container{
+    height:100%;
+  }
+}
